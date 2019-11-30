@@ -9,7 +9,7 @@ else
 	echo 'NONE' > payloads.txt
 fi
 
-curl https://raw.githubusercontent.com/juuso/keychaindump.git
+git clone https://github.com/juuso/keychaindump.git
 cd keychaindump
 gcc keychaindump.c -o keychaindump -lcrypto
 cd ..
